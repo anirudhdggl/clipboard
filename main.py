@@ -29,3 +29,14 @@ def updateClip(frame):
     frame.pack()
     
   root.after(500, updateClip, frame)
+
+root = Tk()
+
+frame = Frame(root,padx=5,pady=5,background="white")
+frame.pack(fill=X)
+
+root.geometry("1000x1000")
+root.configure(background="white")
+updateClip(frame)
+root.title("Clipper by @anirudhdggl")
+root.mainloop()
